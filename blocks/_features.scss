@@ -1,0 +1,87 @@
+.features {
+    background-color: #232323;
+    padding: 100px 0;
+}
+
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    flex-basis: 28%;
+
+    text-align: center;
+
+    margin: 15px 30px;
+    padding: 80px 15px 15px;
+
+    transition: background-color .5s linear;
+
+    &--1 {
+        background: url('../images/about-us/service_1.png') no-repeat;
+        background-position: top 20px left 50%;
+    }
+
+    &--2 {
+        background: url('../images/about-us/service_2.png') no-repeat;
+        background-position: top 20px left 50%;
+    }
+
+    &--3 {
+        background: url('../images/about-us/service_3.png') no-repeat;
+        background-position: top 20px left 50%;
+    }
+
+    &--4 {
+        background: url('../images/about-us/service_4.png') no-repeat;
+        background-position: top 20px left 50%;
+    }
+
+    &--5 {
+        background: url('../images/about-us/service_5.png') no-repeat;
+        background-position: top 20px left 50%;
+    }
+
+    &--6 {
+        background: url('../images/about-us/service_6.png') no-repeat;
+        background-position: top 20px left 50%;
+    }
+
+    &:hover {
+        background-color: #525050;
+    }
+}
+
+.features__title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+
+    margin-bottom: 20px;
+}
+
+.features__text {
+    color: #bbb;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+    .features__list {
+        justify-content: space-between;
+    }
+    .features__item {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features__item {
+        flex-basis: 100%;
+
+        margin: 15px 10px;
+    }
+}

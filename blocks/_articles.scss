@@ -1,0 +1,139 @@
+.main {
+    padding: 80px 0;
+}
+
+.blog-enties {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-enties__articles {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.blog-enties__article {
+    padding-bottom: 65px;
+    margin-bottom: 60px;
+
+    border-bottom: 1px solid #414141;
+}
+
+.article__image {
+    filter: grayscale(100%);
+    transition: filter .5s linear;
+
+    &:hover {
+        filter: none;
+    }
+}
+
+.article__content {
+    margin-top: 30px;
+}
+
+.article__path {
+    color: #fff;
+}
+
+.path {
+    color: #f4dd5b;
+}
+
+.article__title {
+    color: #fff;
+    
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.article__text {
+    color: #bbb;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.article__full-article {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 3px;
+    transition: color .5s ease,
+                border-bottom-color .5s ease;
+
+    &:hover {
+        color: #bbb;
+        border-bottom-color: #bbb;
+    }
+}
+
+.article__nav {
+    display: flex;
+}
+
+.article__pages {
+    font-size: 18px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #414141;
+    line-height: 50px;
+    text-align: center;
+
+    transition: background-color .5s ease,
+                color .5s ease;
+
+    &--active {
+        background-color: #fff;
+        color: #414141;
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: #414141;
+    }
+}
+
+.article__back {
+    display: block;
+
+    color: #337ab7;
+    margin-top: 60px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blog-enties__articles {
+        flex-basis: 100%;
+    }
+    .article__pages {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+

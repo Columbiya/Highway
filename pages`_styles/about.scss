@@ -1,0 +1,14 @@
+body {
+    background: url('../images/about-us/about_us.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+@import '../style';
+@import '../blocks/header';
+@import '../blocks/chat';
+@import '../blocks/footer';
+@import '../blocks/features';
+@import '../blocks/more-about-us';
+@import '../blocks/pricing-tables';

@@ -1,0 +1,28 @@
+.footer {
+    background-color: #313131;
+
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__inner {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer__inner p {
+    margin: 0;
+}
+
+@media screen and (max-width: 630px) {
+    .footer__inner {
+        font-size: 13px;
+    }
+}
